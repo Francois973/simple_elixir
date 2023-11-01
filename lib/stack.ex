@@ -10,4 +10,8 @@ defmodule Stack do
   def hello do
     :world
   end
+
+  def remove_last_element(list) do
+    List.delete_at(list, length(list)-1)
+  end
 end
