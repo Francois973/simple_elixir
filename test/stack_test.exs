@@ -11,6 +11,11 @@ defmodule StackTest do
     assert Stack.is_empty(stack) == true
   end
 
+  test "should return :world" do
+    stack = Stack.hello
+    assert stack == :world
+  end
+
   test "should remove last element" do
     new_list = Stack.remove_last_element([1, 2, 3, 4, 5])
     assert new_list == [1, 2, 3, 4]
